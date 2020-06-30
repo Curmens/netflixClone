@@ -1,0 +1,11 @@
+{
+  "name": "netflixclone",
+  "version": "1.0.0",
+  "description": "Netflix Cloned web version",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Curtis Mensah",
+  "license": "MIT"
+}

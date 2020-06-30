@@ -1,0 +1,614 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Netflix Sans", Helvetica, Arial, sans-serif;
+  --webkit-font-smoothing: antialised;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  width: 100%;
+  height: 96vh;
+  position: relative;
+  background: url("../img/background.jpg") no-repeat center center/cover;
+  border-bottom: 8px solid #222;
+  /* z-index: 1; */
+}
+
+.signin {
+  height: 170vh;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+/* sigin page */
+
+.signin-form {
+  position: relative;
+  z-index: 2;
+  /* place-content: center; */
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+.input-form {
+  display: block;
+  width: 19rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  color: rgb(48, 44, 44);
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn-sign {
+  position: inherit;
+  float: none;
+  width: 14rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2rem;
+  /* margin-left: 50%; */
+}
+
+.signin-container {
+  position: inherit;
+  height: 35rem;
+  width: 35vw;
+  background-color: rgba(0, 0, 0, 0.692);
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding-top: 2rem;
+}
+
+/* sigin page end */
+
+.showcase-top img {
+  width: 170px;
+  position: absolute;
+  /* padding-top: 0.5rem; */
+  padding-bottom: 5rem;
+  left: 2rem;
+  /* transform: translate(-50%, -50%); */
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+  position: relative;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 7rem;
+  z-index: 2;
+  direction: ltr;
+  max-width: 650px;
+}
+
+.showcase-content h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0 0 0.8rem;
+}
+
+.showcase-content .main {
+  /* text-transform: none; */
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 1.55rem;
+  margin: 0 0 0.8rem;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.6rem;
+}
+
+/* tabs */
+
+/* container */
+.container {
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.bt:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 4px;
+}
+
+.btn-xl {
+  font-size: 1.2rem;
+  padding: 1rem 1.7rem;
+  text-transform: uppercase;
+  /* text-align: justify;
+  position: relative; */
+  width: 40%;
+  font-weight: 350;
+  height: 3.7rem;
+  margin-left: 1px;
+}
+
+.btn-md {
+  /* font-size: 0.6rem; */
+  /* padding: 0.1rem 0.2rem; */
+  background-color: #e50914;
+  line-height: normal;
+  padding: 6.8px 16.5px;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.sign-in-home {
+  float: right;
+}
+
+.form-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  place-content: center;
+}
+
+.register {
+  width: 60%;
+  height: 3.7rem;
+  font-size: 1rem;
+  padding-left: 0.7rem;
+}
+
+.additional-info {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* section {
+  height: 700px;
+} */
+
+.text-data {
+  position: relative;
+  color: white;
+  max-width: 450px;
+  margin: auto;
+  float: left;
+  left: 1.5rem;
+  padding-right: 1rem;
+}
+
+.text-data h2 {
+  font-size: 2.8rem;
+  text-align: none;
+  font-weight: 700;
+}
+
+.text-data p {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/* Sector-one */
+.sector-one,
+.sector-three {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  /* margin: auto; */
+  border-bottom: 8px solid #222;
+
+  padding: 2rem 0rem;
+}
+
+.tv-image,
+.devices-image {
+  position: relative;
+  top: -1rem;
+  height: 17rem;
+  width: 27rem;
+  right: 2rem;
+}
+
+.inside {
+  position: absolute;
+  height: 15rem;
+  width: 20rem;
+  margin-left: 36rem;
+}
+
+/* Sector two */
+
+.sector-two {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 8px solid #222;
+  place-content: center;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  padding: 2rem 1rem;
+}
+
+.mobile-image {
+  position: relative;
+  top: -1rem;
+  height: 16rem;
+  width: 31rem;
+  left: 2rem;
+  /* margin-left: 2rem; */
+}
+
+.text-right {
+  max-width: 550px;
+  /* font-size: medium;
+  font-weight: 400; */
+}
+
+/* Footer */
+.footer-box {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.footer-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.534);
+  z-index: 4;
+  width: 100vw;
+  padding: 1rem 7rem;
+  margin-top: 16.6rem;
+}
+
+/* footer for signin Page */
+/* .footer-data {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+  margin-left: 50%;
+} */
+
+/* Hiding the scrolbar */
+/* Hide scrollbar for Chrome, Safari and Opera */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 4px; /* Remove scrollbar space */
+  background: rgba(
+    2,
+    2,
+    2,
+    0.582
+  ); /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+@media (max-width: 960px) {
+  .showcase {
+    height: 90vh;
+  }
+  .showcase-content {
+    margin-bottom: 1rem;
+    top: 9rem;
+  }
+
+  .showcase-content h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: -7rem;
+  }
+
+  .showcase-content .main,
+  .additional-info {
+    /* text-transform: none; */
+    /* color: #fff; */
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.815);
+    /* line-height: 1; */
+    font-size: 1rem;
+    /* margin: 0 0 0.8rem; */
+    /* max-width: 550px; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .btn-xl {
+    width: 30%;
+    padding: 1rem 1.2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    height: 3.1rem;
+  }
+
+  .register {
+    width: 40%;
+    height: 3.1rem;
+  }
+  .showcase-top img {
+    top: 5%;
+    left: 5%;
+    transform: translate(0);
+  }
+
+  .signin {
+    height: 150vh;
+  }
+
+  .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* 
+  .inside {
+    position: absolute;
+    left: -9rem;
+  } */
+
+  .img-left {
+    position: relative;
+    left: -5%;
+  }
+
+  .text-data h2 {
+    font-size: 2.3rem;
+  }
+  .text-data p {
+    font-size: 1.3rem;
+  }
+
+  .text-data {
+    max-width: 400px;
+    padding-left: 0;
+  }
+  .text-right {
+    margin-left: -4rem;
+  }
+
+  .tv-image,
+  .devices-image {
+    position: relative;
+    top: 2rem;
+    height: 14rem;
+    width: 16rem;
+    margin-right: -1rem;
+  }
+  .sector-one,
+  .sector-three,
+  .sector-two {
+    height: 350px;
+    padding: 1rem 0rem;
+  }
+
+  .mobile-image {
+    height: 13rem;
+    width: 25rem;
+    left: -2rem;
+  }
+  .signin-container {
+    height: 30rem;
+    top: 25vh;
+    margin-bottom: -20rem;
+  }
+  .footer-container {
+    padding: 1rem 2rem;
+    height: auto;
+    position: absolute;
+    bottom: -10rem;
+    padding-bottom: -100rem;
+  }
+  .footer-box {
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .showcase {
+    height: 90vh;
+  }
+  .showcase-content {
+    margin-top: 1.3rem;
+  }
+
+  .showcase-content h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 0.6;
+  }
+  .sector-one,
+  .sector-three,
+  .sector-two {
+    height: 300px;
+    padding: 1rem 0rem;
+  }
+
+  .input-form {
+    width: 13rem;
+    margin: auto;
+    margin-bottom: 0.7rem;
+    height: 37px;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    font-size: 13px;
+  }
+  .btn-sign {
+    font-weight: 500;
+    font-size: 1.05rem;
+    position: relative;
+    top: 1.2rem;
+  }
+  .signin-container {
+    position: relative;
+    height: 20rem;
+    width: 35vw;
+    top: 50vh;
+    padding-top: 1.5rem;
+    border-radius: 5px;
+  }
+
+  .signin {
+    height: 150vh;
+  }
+  .footer-container {
+    padding: 1rem 4rem;
+    margin-top: 2.6rem;
+    height: auto;
+    padding-bottom: -100rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .form-container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-left: 50%;
+  }
+
+  .btn-xl {
+    width: 100%;
+    padding-top: auto;
+    font-weight: 300;
+    font-size: 1rem;
+    height: 3rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .register {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .showcase-content .main {
+    max-width: 400px;
+    top: 10rem;
+    margin-bottom: 3rem;
+  }
+}
